@@ -72,3 +72,37 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+
+## CUSTOM
+# Ajax
+snippet ajax
+	$.ajax({
+		type:"${1:GET}",
+		url:${2:url},
+		data:${3:params},
+		cache:${4:false},
+		dataType:"${5:json}",
+		error:${6:better_ajax_error},
+		success:${7:success}
+	});
+# Header
+snippet header
+	/**
+	 * @file `expand('%')`
+	 *
+	 * @description
+	 * ${1:DESC}
+	 *
+	 * @author Evan Stern
+	 *
+	 * @revisions
+	 * `strftime('%m/%d/%Y')` -- Evan Stern
+	 *   Initial Revision
+	 */
+# define
+snippet define
+	define([
+		${1}
+	], function() {
+		${2}
+	});
